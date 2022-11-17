@@ -28,7 +28,7 @@ collections:
           name: "image",
           widget: "image",
           media_library: "images",
-          config: { multiple: false },
+          config: multiple: false,
         }
       - { label: "Git Repo", name: "git", widget: "string" }
       - { label: "Site Link", name: "link", widget: "string" }
