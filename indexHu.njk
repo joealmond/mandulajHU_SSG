@@ -1,0 +1,27 @@
+---
+layout: layouts/homeHu.njk
+---
+
+    <!-- works
+    ================================================== -->
+    <section id="works" class="s-works target-section">
+      <div class="row heading-block heading-block--center" data-aos="fade-up">
+        <div class="column large-full">
+          <h2 class="section-heading section-heading--centerbottom">
+            Válogatott Munkáim
+          </h2>
+          <p class="section-desc">
+            Itt megtekitheted néhány utóbbi munkámat.
+          </p>
+        </div>
+      </div>
+      <!-- end heading-block -->
+
+  <div class="masonry-wrap">
+    <div class="masonry">
+      <div class="grid-sizer"></div>
+
+  {% set postslist = collections.posts | head(-3) %} {% set postslistCounter =
+  collections.posts | length %} {% include "postslistHu.njk" %}
+
+</section>

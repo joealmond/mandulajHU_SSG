@@ -1,14 +1,28 @@
 ---
 layout: layouts/home.njk
-eleventyNavigation:
-  key: Home
-  order: 1
 ---
-{% set maxPosts = collections.posts.length | min(3) %}
-<h1>Latest {% if maxPosts == 1 %}Post{% else %}{{ maxPosts }} Posts{% endif %}</h1>
 
-{% set postslist = collections.posts | head(-3) %}
-{% set postslistCounter = collections.posts | length %}
-{% include "postslist.njk" %}
+<!-- works
+    ================================================== -->
+<section id="works" class="s-works target-section">
+  <div class="row heading-block heading-block--center" data-aos="fade-up">
+    <div class="column large-full">
+      <h2 class="section-heading section-heading--centerbottom">
+        Selected Works
+      </h2>
+      <p class="section-desc">
+        Here are some of my selected works I have done lately. Feel free to
+        check them out.
+      </p>
+    </div>
+  </div>
+  <!-- end heading-block -->
 
-<p>More posts can be found in <a href="{{ '/posts/' | url }}">the archive</a>.</p>
+  <div class="masonry-wrap">
+    <div class="masonry">
+      <div class="grid-sizer"></div>
+
+  {% set postslist = collections.posts | head(-3) %} {% set postslistCounter =
+  collections.posts | length %} {% include "postslist.njk" %}
+
+</section>

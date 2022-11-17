@@ -1,12 +1,41 @@
-<ol reversed class="postlist" style="counter-reset: start-from {{ (postslistCounter or postslist.length) + 1 }}">
 {% for post in postslist | reverse %}
-  <li class="postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
-    <a href="{{ post.url | url }}" class="postlist-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
-    <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
-    {% for tag in post.data.tags | filterTagList %}
-      {% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
-      <a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
-    {% endfor %}
-  </li>
+<!-- end masonry__brick -->
+
+<div class="masonry__brick" data-aos="fade-up">
+  <div class="item-folio">
+    <div class="item-folio__thumb">
+      <a
+        href="{{ post.data.image }}"
+        class="thumb-link"
+        title="Google Sheets as CMS"
+        data-size="1573x1387"
+      >
+        <img src="{{ post.data.image }}" srcset="" alt="" />
+      </a>
+      <a
+        href="{{ post.data.link }}"
+        class="item-folio__project-link"
+        title="Project link"
+        target="_blank"
+      ></a>
+      <a
+        href="{{ post.data.git }}"
+        class="item-folio__project-source"
+        title="Project source"
+        target="_blank"
+      ></a>
+    </div>
+    <div class="item-folio__text">
+      <h4 class="item-folio__title">{{ post.data.titleEn }}</h4>
+      <p class="item-folio__cat">{{ post.data.descriptionEn }}</p>
+    </div>
+    <div class="item-folio__caption">
+      <p>
+        {{ post.data.detailsEn }}
+      </p>
+    </div>
+  </div>
+</div>
+<!-- end masonry__brick -->
+
 {% endfor %}
-</ol>

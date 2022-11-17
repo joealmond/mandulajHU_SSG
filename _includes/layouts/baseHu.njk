@@ -1,0 +1,511 @@
+---
+permalink: index_hu.html
+---
+<!doctype html>
+<html lang="hu">
+  {% set lang = "hu" %}
+  <head>
+        <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>{{ title or metadata.title }}</title>
+    <meta name="description" content="{{ description or metadata.description }}">
+
+        <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="{{ 'css/base.css' | url }}">
+    <link rel="stylesheet" href="{{ 'css/vendor.css' | url }}">
+    <link rel="stylesheet" href="{{ 'css/main.css' | url }}">
+        <!-- script
+    ================================================== -->
+    <script src="{{ 'js/modernizr.js' | url }}"></script>
+    <script src="{{ 'js/pace.min.js' | url }}"></script>
+
+        <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ 'images/MJ_icon.svg' | url }}" />
+    <link rel="icon" type="image/svg" sizes="32x32" href="{{ 'images/MJ_icon.svg' | url }}" />
+    <link rel="icon" type="image/svg" sizes="16x16" href="{{ 'images/MJ_icon.svg' | url }}" />
+    <link rel="manifest" href="js/site.webmanifest" />
+            <!-- Eleventy specific
+    ================================================== -->
+    <meta name="generator" content="{{ eleventy.generator }}">
+    <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
+    <link rel="alternate" href="{{ metadata.jsonfeed.path | url }}" type="application/json" title="{{ metadata.title }}">
+  </head>
+  <body id="top">
+    <div id="preloader">
+      <div id="loader"></div>
+    </div>
+     <!-- site header
+    ================================================== -->
+    <header class="s-header">
+      <div class="header-logo">
+        <a class="site-logo" href="index.html">
+          <img src="images/MJ_icon.svg" alt="Homepage">
+        </a>
+      </div>
+      <nav class="header-nav-wrap">
+        <ul class="header-main-nav">
+          <li class="current">
+            <a class="smoothscroll" href="#intro" title="intro">Intró</a>
+          </li>
+          <li><a class="smoothscroll" href="#about" title="about">Rólam</a></li>
+          <li><a class="smoothscroll" href="#works" title="works">Munkáim</a></li>
+          <li>
+            <a class="smoothscroll" href="#contact" title="kapcsolat"
+              >Írj nekem</a
+            >
+          </li>
+        </ul>
+        <ul class="header-social">
+          <li>
+            <a href="https://www.facebook.com/jozsef.mandula"
+              ><i class="fab fa-facebook-f" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/messages/t/jozsef.mandula/"
+              ><i class="fab fa-facebook-messenger" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/joealmond/"
+              ><i class="fab fa-linkedin" aria-hidden="true"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <a id="language-flag" href="index.html"
+      ><img src="images/flags/Flag_of_the_United_Kingdom.svg" alt="Magyar"/>
+    </a>
+    <br>
+      <a class="header-menu-toggle" href="#"><span>Menü</span></a>
+    </header>
+    <!-- end s-header -->
+
+        <!-- intro
+    ================================================== -->
+    <section id="intro" class="s-intro target-section">
+      <div class="row intro-content">
+        <div class="column large-9 mob-full intro-text">
+          <h3 id="title">Helló, itt Mandula József.</h3>
+          <h1>
+            Jelenleg, <br />
+            karrierváltó vagyok. <br />
+          </h1>
+        </div>
+
+        <div class="intro-scroll">
+          <a href="#about" class="intro-scroll-link smoothscroll">
+            Görgess tovább
+          </a>
+        </div>
+
+        <div class="intro-grid"></div>
+        <video
+          class="intro-pic intro-video"
+          loop
+          muted
+          autoplay
+          playsinline
+          src="images/mj_loop.mp4"
+        ></video>
+      </div>
+      <!-- end row -->
+    </section>
+    <!-- end intro -->
+
+         <!-- about
+    ================================================== -->
+    <section id="about" class="s-about target-section">
+      <div class="about-me">
+        <div class="row heading-block" data-aos="fade-up">
+          <div class="column large-full">
+            <h2 class="section-heading">Rólam</h2>
+          </div>
+        </div>
+
+        <div class="row about-me__content" data-aos="fade-up">
+          <div class="column large-full about-me__text">
+            <p class="lead">
+              Jeleneleg, karrierváltó vagyok.<br />
+              Problémamegoldó vagyok.<br />
+              Technológiai beállítottságú vagyok.<br />
+              Szeretek elméjült tervező munkát végezni.<br />
+              Csapatban jól érzem magam.<br />
+              Az értelmes célokért mindent megteszek.<br />
+              Végtelenül türelmes vagyok.<br />
+              Az élethosszig tanulás híve vagyok.<br />
+              Szeretem az angol nyelvet.<br />
+              Az informatikai eszközök megjavulnak a kezem alatt.<br />
+            </p>
+
+            <p class="lead">
+              <br />
+              Házas vagyok, boldogan élünk együtt feleségemmel és kislányommal, Biatorbágyon.<br />
+              <br />
+              Könnyen elbeszélgetek angolul és spanyolul is. Angolul az írás is könnyen megy.<br />
+              <br />
+              Van jogosítványom és saját autóm.<br />
+            </p>
+          </div>
+        </div>
+
+        <div class="row about-me__buttons">
+          <div class="column large-half tab-full" data-aos="fade-up">
+            <a
+              href="mailto:me@mandulaj.hu"
+              class="btn btn--stroke full-width"
+              >Várom a megkeresésed</a
+            >
+          </div>
+          <div class="column large-half tab-full" data-aos="fade-up">
+            <a
+              download
+              href="resume/Mandula József - Önéletrajz @ Webfejlesztő.pdf"
+              class="btn btn--primary full-width"
+              >Önéletrajz letöltése</a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- end about-me -->
+
+      <div class="about-experience">
+        <div class="row heading-block" data-aos="fade-up">
+          <div class="column large-full">
+            <h2 class="section-heading">Munkahelyeim és Tanulmányaim</h2>
+          </div>
+        </div>
+
+        <div class="row about-experience__timeline">
+          <div class="column large-half tab-full" data-aos="fade-up">
+            <div class="timeline">
+              <div class="timeline__icon-wrap">
+                <span class="timeline__icon timeline__icon--work"></span>
+              </div>
+
+              <div class="timeline__block">
+                <div class="timeline__bullet"></div>
+                <div class="timeline__header">
+                  <p class="timeline__timeframe">2018. November – 2021. Május</p>
+                  <h3 class="item-title">Event & More Kft.</h3>
+                  <h5>Szoftver fejlesztési menedzser</h5>
+                </div>
+                <div class="timeline__desc">
+                  <p>
+                    A különböző projektek fejlesztésének és működtetésének irányítása
+                    volt a feladatom, ami magában foglalta rendezvények közönségregisztrációját, ülőhelyek foglalását, szállásfoglalást,
+                    és egyéb rendszereket.<br />
+                    Kiemelném a legutóbbi egyedi fejlesztésű élő rendezvényplatform elkészítésében való részvételemet a Cisco Systems Hungary részére.
+                  </p>
+                </div>
+              </div>
+
+              <div class="timeline__block">
+                <div class="timeline__bullet"></div>
+                <div class="timeline__header">
+                  <p class="timeline__timeframe">2008. Október – 2020. Október </p>
+                  <h3 class="item-title">Event & More Kft.</h3>
+                  <h5>Műszaki vezető</h5>
+                </div>
+                <div class="timeline__desc">
+                  <p>
+                    A felelőségi körömbe tartozott, hogy garantáljam a rendezvények technikai sikerességét, beleértve bármilyen műszaki és az informatikai megoldásokat is. Több mint 10000 főt érintő zártkörű esemény műszaki vezetőjeként is megálltam a helyem. 
+                    Munkám során módszereket dolgoztami ki a hatékonyabb működés és kiszámíthatóság érdekében. 
+                    A kihívást jelentő feladatok hajtottak előre előmenetelem során.
+                  </p>
+                </div>
+              </div>
+
+              <div class="timeline__block">
+                <div class="timeline__bullet"></div>
+                <div class="timeline__header">
+                  <p class="timeline__timeframe">2010. – Jeleneleg</p>
+                  <h3 class="item-title">Vállakozó</h3>
+                </div>
+                <div class="timeline__desc">
+                  <p>
+                    Magánvállakozásomat különböző projektekben való résztvétel érdekében tartom fent.
+                  </p>
+                </div>
+              </div>
+              <div class="timeline__block">
+                <div class="timeline__bullet"></div>
+                <div class="timeline__header">
+                  <p class="timeline__timeframe">2002. – 2020.</p>
+                  <h3 class="item-title">Különböző cégeknél</h3>
+                  <h5>Hangmérnök</h5>
+                </div>
+                <div class="timeline__desc">
+                  <p>
+                    Hangfelvételeket, élő hangosítást és hangdizájnt készítettem színházi előadásokhoz, különböző zenekaroknak és cégeknek: @
+                    Budapest Bábszínház * Tecnosound Canarias SL. * LV Hang
+                    Bt. * Mitsoura zenekar * Bognár Szilvia és zenekara * Kolompos eggyüttes *
+                    stb.
+                  </p>
+                </div>
+              </div>
+
+              <div class="timeline__block">
+                <div class="timeline__bullet"></div>
+                <div class="timeline__header">
+                  <p class="timeline__timeframe">2007. – 2021.</p>
+                  <h3 class="item-title">Különböző cégeknél</h3>
+                  <h5>Műszaki szakértő</h5>
+                </div>
+                <div class="timeline__desc">
+                  <p>
+                    Audiovizuális rendszereinek tervezése volt a feladatom @ Xenoton Kft. * Mikropo Kft. *
+                    Klauzál Gábor Budafok-Tétényi Művelődési Központ | Klauzál Ház
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column large-half tab-full" data-aos="fade-up">
+            <div class="timeline">
+              <div class="timeline__icon-wrap">
+                <span class="timeline__icon timeline__icon--education"></span>
+              </div>
+
+
+
+              <div class="timeline__block">
+                <div class="timeline__bullet"></div>
+                <div class="timeline__header">
+                  <p class="timeline__timeframe">2019. – Jeleneleg</p>
+                  <h3 class="item-title">Webfejlesztés - Bootcamp és önképzés</h3>
+                  <h5>Epam Front-End Program 2022, Programozás Karrier 1.0</h5>
+                </div>
+                <div class="timeline__desc">
+                  <p>
+                    JavaScript, Node.js, React, Python, CSS, HTML, biztonság & Hálózatok...
+                  </p>
+                </div>
+              </div>
+              <div class="timeline__block">
+                <div class="timeline__bullet"></div>
+                <div class="timeline__header">
+                  <h3 class="item-title">Oktopus Multimédia Intézet</h3>
+                  <h5>Hangmester (OKJ)</h5>
+                </div>
+                <div class="timeline__desc">
+                  <p>
+                  </p>
+                </div>
+              </div>
+              <div class="timeline__block">
+                <div class="timeline__bullet"></div>
+                <div class="timeline__header">
+                  <h3 class="item-title">Kossuth Lajos Gimnázium</h3>
+                  <h5>Érettségi</h5>
+                </div>
+                <div class="timeline__desc">
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end about-experience -->
+    </section>
+    <!-- end s-about -->
+    <!-- services
+    ================================================== -->
+
+    <main {% if templateClass %} class="{{ templateClass }}"{% endif %}>
+      {{ content | safe }}
+    </main>
+
+
+          <!-- end masonry__brick -->
+        </div>
+        <!-- end masonry -->
+      </div>
+      <!-- end masonry-wrap -->
+    </section>
+    <!-- end s-work -->
+<!-- testimonies
+    ================================================== -->
+    <section class="s-testimonials">
+    
+      <div class="row testimonials" data-aos="fade-up">
+
+          <div class="column large-full testimonials__slider">
+
+              <div class="testimonials__slide">
+                  <p>Válassz olyan munkát, amit szeretsz és egy napot sem kell dolgoznod az életedben.</p>
+                  <div class="testimonials__info">
+                                       <cite class="testimonials__cite">
+                          <strong>Konfucius</strong>
+                      </cite>
+                  </div>
+              </div> <!-- end testimonials__slide -->
+
+              <div class="testimonials__slide">
+                  <p>A nehézségek közt mindig ott van a lehetőség.</p>
+                  <div class="testimonials__info">
+                             <cite class="testimonials__cite">
+                          <strong>Albert Einstein</strong>
+
+                      </cite>
+                  </div>
+              </div> <!-- end testimonials__slide -->
+
+              <div class="testimonials__slide">
+                  <p>A tanulás a legerősebb fegyver, amivel megváltoztathatod a világot.</p>
+                  <div class="testimonials__info">
+                                           <cite class="testimonials__cite">
+                          <strong>Nelson Mandela</strong>
+                      </cite>
+                  </div>
+              </div> <!-- end testimonials__slide -->
+              
+          </div> <!-- end testimonials__slider -->
+
+      </div> <!-- end testimonials -->
+
+  </section> <!-- end s-testimonials -->
+  <!-- contact
+  ================================================== -->
+  <section id="contact" class="s-contact ss-dark target-section">
+    <div class="row heading-block" data-aos="fade-up">
+      <div class="column large-full">
+        <h2 class="section-heading">Get In Touch</h2>
+      </div>
+    </div>
+
+    <div class="row contact-main" data-aos="fade-up">
+      <div class="column large-full">
+        <p class="contact-email">
+          <a id="shrink" href="mailto:me@mandulaj.hu"
+            >me@mandulaj.hu</a
+          >
+        </p>
+
+        <p class="section-desc">
+          I'm happy to connect, listen and help. Let's work together and build
+          something awesome.
+          <a href="mailto:me@mandulaj.hu">Email Me</a>.
+        </p>
+      </div>
+    </div>
+
+    <div
+      class="row contact-infos"
+      data-aos="fade-up"
+      data-aos-anchor=".contact-main"
+    >
+      <!-- <div class="column large-5 medium-full contact-phone">
+              <h4>Call Me</h4>
+              <a href="tel:00-36-70-312-3264">+36 seventy 3123264</a>
+          </div> -->
+
+      <div class="column large-7 medium-full contact-social">
+        <h4>Social</h4>
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/jozsef.mandula" title="Facebook"
+              >Facebook</a
+            >
+          </li>
+          <li><a href="https://www.facebook.com/messages/t/jozsef.mandula/" title="Facebook Messenger">Messenger</a></li>
+          <li><a href="https://www.linkedin.com/in/joealmond/" title="LinkedIn">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- end contact-infos -->
+  </section>
+  <!-- end s-contact -->
+
+  <!-- footer
+  ================================================== -->
+  <footer>
+    <div class="row">
+      <div class="column large-full ss-copyright">
+        <span>© Copyright Epitome 2019</span>
+        <span
+          >Design by
+          <a href="https://www.styleshout.com/">StyleShout</a></span
+        >
+      </div>
+
+      <div class="ss-go-top">
+        <a class="smoothscroll" title="Back to Top" href="#top"></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- photoswipe background
+  ================================================== -->
+  <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+    <div class="pswp__bg"></div>
+    <div class="pswp__scroll-wrap">
+      <div class="pswp__container">
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+      </div>
+
+      <div class="pswp__ui pswp__ui--hidden">
+        <div class="pswp__top-bar">
+          <div class="pswp__counter"></div>
+          <button
+            class="pswp__button pswp__button--close"
+            title="Close (Esc)"
+          ></button>
+          <button
+            class="pswp__button pswp__button--share"
+            title="Share"
+          ></button>
+          <button
+            class="pswp__button pswp__button--fs"
+            title="Toggle fullscreen"
+          ></button>
+          <button
+            class="pswp__button pswp__button--zoom"
+            title="Zoom in/out"
+          ></button>
+          <div class="pswp__preloader">
+            <div class="pswp__preloader__icn">
+              <div class="pswp__preloader__cut">
+                <div class="pswp__preloader__donut"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"
+        >
+          <div class="pswp__share-tooltip"></div>
+        </div>
+        <button
+          class="pswp__button pswp__button--arrow--left"
+          title="Previous (arrow left)"
+        ></button>
+        <button
+          class="pswp__button pswp__button--arrow--right"
+          title="Next (arrow right)"
+        ></button>
+        <div class="pswp__caption">
+          <div class="pswp__caption__center"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end photoSwipe background -->
+
+        <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

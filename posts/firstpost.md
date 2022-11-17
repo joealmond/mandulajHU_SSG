@@ -1,26 +1,12 @@
 ---
-title: This is my first post.
-description: This is a post on My Blog about agile frameworks.
-date: 2018-05-01
-tags:
-  - another tag
+titleHu: Google Sheets CMS-ként
+titleEn: Google Sheets as CMS
+descriptionHu: Webfejlesztés
+descriptionEn: Web Development
 layout: layouts/post.njk
+git: https://github.com/joealmond/Google-Sheets-CMS-with-11ty
+link: https://epic-borg-fd9565.netlify.app/
+image: images/portfolio/GoogleSheetsCMSpoc.jpeg
+detailsHu: Ez egy proove of concept arra, hogy a Google Sheet szolgálhat CMS-ként. Tartalomváltozás esetén a statikus oldal frissítére kerül és a kliens oldal ujratöltödik a friss tartalommal. A statikus webhely generálás a 11ty.js segítségével Node.js alapon történt, Netlify on kiszolgálva.
+detailsEn: This is a proove of concept that a Google Sheet can serve as a CMS. It features re deploying and hot realoading on content change. Static Site generation made with 11ty.js based on Node.js deployed on Netlify
 ---
-Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
-
-Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
-
-## Section Header
-
-Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
-
-```diff-js
-// this is a command
-function myCommand() {
-+	let counter = 0;
-+	counter++;
-}
-
-// Test with a line break above this line.
-console.log('Test');
-```
