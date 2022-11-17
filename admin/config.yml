@@ -23,13 +23,12 @@ collections:
         }
       - { label: "Title Hun", name: "titleHu", widget: "string" }
       - { label: "Title Eng", name: "titleEn", widget: "string" }
-      - {
-          label: "Image",
-          name: "image",
-          widget: "image",
-          media_library: "images",
-          config: multiple: false,
-        }
+      - label: "Image"
+        name: "image"
+        widget: "image"
+        media_library: "images"
+           config: 
+             multiple: false
       - { label: "Git Repo", name: "git", widget: "string" }
       - { label: "Site Link", name: "link", widget: "string" }
       - { label: "Description Hun", name: "descriptionHu", widget: "string" }
