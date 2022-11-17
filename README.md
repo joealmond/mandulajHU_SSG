@@ -1,4 +1,4 @@
-# eleventy-base-blog
+# eleventy-base-blog - Modified for my personal site
 
 A starter repository showing how to build a blog with the [Eleventy](https://github.com/11ty/eleventy) static site generator.
 
