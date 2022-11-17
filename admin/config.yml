@@ -1,0 +1,20 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: "images"
+collections:
+  - name: "works" # Used in routes, e.g., /admin/collections/blog
+    label: "works" # Used in the UI
+    folder: "_posts/" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields for each document, usually in front matter
+      - { label: "Layout", name: "layout", widget: "hidden", default: "works" }
+      - { label: "Title Hun", name: "titleHu", widget: "string" }
+      - { label: "Title Eng", name: "titleEn", widget: "string" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Git Repo", name: "git", widget: "string" }
+      - { label: "Site Link", name: "link", widget: "string" }
+      - { label: "Description Hun", name: "descriptionHu", widget: "string" }
+      - { label: "Description Eng", name: "descriptionEn", widget: "string" }
+      - { label: "Deatails Hun", name: "detailsHu", widget: "string" }
+      - { label: "Deatails Eng", name: "detailsEn", widget: "string" }
